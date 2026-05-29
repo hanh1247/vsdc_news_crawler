@@ -167,7 +167,7 @@ sheet1.append_rows(result.values.tolist(),value_input_option='USER_ENTERED')
 sheet2.append_rows(result.values.tolist(),value_input_option='USER_ENTERED')    
 
 data1=sheet1.get_all_values()
-data2=sheet1.get_all_values()
+data2=sheet2.get_all_values()
 requests1 = []
 for i in range(len(data1)- 1,0,-1): 
     value_1 = str(data1[i][1]).strip() if data1[i][1] else ""
