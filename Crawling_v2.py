@@ -200,7 +200,7 @@ for i in range(len(data2)- 1,0,-1):
     value_21 = str(data2[i][2]).strip()
     if len(value_2)>3 or any(keyword in value_21 for keyword in del_keywords_sheet2):
         print(f"  → Dòng {i} khớp: value_1='{value_2}' | value_12='{value_21}'")
-        requests1.append({
+        requests2.append({
             "deleteDimension": {
                 "range": {
                     "sheetId":worksheet_id_2,
